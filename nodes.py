@@ -566,7 +566,7 @@ class RestartSignal(io.ComfyNode):
     def define_schema(cls) -> io.Schema:
         return io.Schema(
             node_id="RestartSignal",
-            category="Video Helper Suite 🎥🅥🅗🅢",
+            category="utils",
             is_output_node=True,
             inputs=[],
             outputs=[],
@@ -677,7 +677,7 @@ class DataInspector(io.ComfyNode):
     def define_schema(cls) -> io.Schema:
         return io.Schema(
             node_id="DataInspector",
-            category="utils/debug",
+            category="utils",
             is_output_node=True,
             inputs=[io.AnyType.Input("data")],
             outputs=[io.AnyType.Output(display_name="data")],
@@ -706,7 +706,7 @@ class ModelDownloaderNode(io.ComfyNode):
 
         return io.Schema(
             node_id="ModelDownloaderNode",
-            category="Video Helper Suite 🎥🅥🅗🅢",
+            category="utils",
             is_output_node=True,
             inputs=[
                 io.String.Input("url", default="", multiline=False),
